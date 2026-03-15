@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Launch TermLife terminal from the current working directory
+TERMLIFE_CWD="$(pwd)"
+export TERMLIFE_CWD
+TERMLIFE_DIR="$(cd "$(dirname "$(readlink -f "$0" 2>/dev/null || realpath "$0" 2>/dev/null || echo "$0")")" && pwd)"
+cd "$TERMLIFE_DIR" && exec npx electron ./out/main/index.js --cwd="$TERMLIFE_CWD"

@@ -1,20 +1,19 @@
 # TermLife
 
-A terminal emulator for the vibe coding era. TermLife makes the terminal visually expressive — CRT effects, matrix rain, bubble physics, and font-aware markdown rendering — all GPU-accelerated. Built with Electron and PixiJS for people who want their terminal to feel alive, not just fast.
+A terminal emulator for the vibe coding era. Actually it is built for a renessance of "multi-tasking". If you are in a terminal tab, but another tab needs your attention (LLM is calling for help!) with a key-combo or click on can switch to the next highest-priority tab. Except that feature is still a bit buggy. What works well thouse is the Markdown rendering. With English being the hottest new coding language and AI-assisted coders mostly editing markdown files this is a nice feature to have. Check out below screenshot based on command "vi README.md": it shows the screen of the anient `vi` editor - it does not know that the terminal program detects markdown, rescales fonts and detects are formatting do-dads. Having surplus compute a 'raising bubble' effect has been added via a click and the hidden 'matrix rain' animation to complete the orchestration - all geared to keep you in the "flow" so you can keep vibe-coding!
 
 ![TermLife Screenshot](assets/termlife-markdown.png)
 
 ## Features
 
-- **Semi-Markdown mode** — Font-aware markdown rendering with bold, italic, headers, and more — right in your terminal
-- **CRT filter** — Scanlines, phosphor glow, and barrel distortion via custom GLSL shaders
-- **Bubble effects** — Physics-based particle effects powered by Matter.js
-- **Matrix rain** — Falling glyph animation overlay
-- **AI attention scoring** — Tabs scored by activity for intelligent switching
-- **Smart tab switching** — Ctrl+Tab jumps to the tab that needs your attention most
-- **Split panes** — Single, vertical, horizontal, and quad layouts
-- **GPU-rendered** — Every cell rendered on the GPU, not the DOM
-- **Scrollback buffer** — Full history with mouse wheel and keyboard navigation
+- **Semi-Markdown mode:** Font-aware markdown rendering with bold, italic, headers, and more in the terminal
+- **Smart tab switching:** Ctrl+Tab jumps to the tab that needs your attention most
+- **AI chat navigation:** Jump back and forth in AI chat conversations using key combos (ctrl-shift arrow-up/down)
+- **Split panes:** Single, vertical, horizontal, and quad layouts. Inspired by `tmux` but with copy/paste working
+- **Git support:** yep,  another git client built in
+- **Views:** dashboard, command history, version control, file browser: different views available using key-combo or button
+- **Graphics effects:** Physics-based particle effects like raising bubbles, snow-fall. Reason: no reason, just fun for the flow and all
+- **Productivity tools:** built-in optional clock and pomodoro timer
 
 ## Getting Started
 
@@ -40,18 +39,18 @@ npm run build
 
 ## Keyboard Shortcuts
 
-| Shortcut | Action |
-|----------|--------|
-| `Cmd/Ctrl+T` | New tab |
-| `Cmd/Ctrl+W` | Close tab |
-| `Cmd/Ctrl+1-9` | Switch to tab N |
-| `Ctrl+Tab` | Smart tab switch |
-| `Ctrl+Shift+K` | Toggle Semi-Markdown mode |
-| `Ctrl+Shift+C` | Toggle CRT filter |
-| `Ctrl+Shift+M` | Toggle Matrix rain |
-| `Shift+PageUp/Down` | Scroll up/down |
-| `Cmd/Ctrl+C` | Copy selection |
-| `Cmd/Ctrl+V` | Paste |
+| Shortcut              | Action                    |
+| --------------------- | ------------------------- |
+| `Cmd/Ctrl+T`        | New tab                   |
+| `Cmd/Ctrl+W`        | Close tab                 |
+| `Cmd/Ctrl+1-9`      | Switch to tab N           |
+| `Ctrl+Tab`          | Smart tab switch          |
+| `Ctrl+Shift+K`      | Toggle Semi-Markdown mode |
+| `Ctrl+Shift+C`      | Toggle CRT filter         |
+| `Ctrl+Shift+M`      | Toggle Matrix rain        |
+| `Shift+PageUp/Down` | Scroll up/down            |
+| `Cmd/Ctrl+C`        | Copy selection            |
+| `Cmd/Ctrl+V`        | Paste                     |
 
 ## Architecture
 

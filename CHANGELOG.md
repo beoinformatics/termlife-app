@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.3.1] - 2026-03-15
+
+### Added
+- **Semi-Markdown Mode** (`Ctrl+Shift+K`) — Font-aware markdown rendering with bold, italic, headers, and more directly in the terminal
+- **PTY Backpressure** — Fixes hangs during large data transfers by applying flow control to PTY data
+- **Low-GPU Mode** (`--low-gpu` flag) — Simulates lower-end hardware for testing and accessibility
+- **Background Tab Optimization** — Reduced CPU pressure from background tabs and child process checks
+
+### Changed
+- Open-sourced under MIT license on GitHub
+- Added README, CONTRIBUTING.md, and LICENSE for community release
+
+---
+
 ## [0.3.0] - 2026-03-06
 
 ### Added
@@ -77,4 +91,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **App Commands** - Internal command system for application control
 - **Electron-Vite Build** - Modern build setup targeting main, preload, and renderer processes
 
-[0.3.0]: https://bitbucket.org/solace/termlife/src/v0.3.0
+[0.3.1]: https://github.com/beoinformatics/termlife-app/releases/tag/v0.3.1
+[0.3.0]: https://github.com/beoinformatics/termlife-app/releases/tag/v0.3.0

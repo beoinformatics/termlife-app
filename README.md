@@ -1,8 +1,12 @@
 # TermLife
 
-A terminal emulator for the vibe coding era. Actually it is built for a renessance of "multi-tasking". If you are in a terminal tab, but another tab needs your attention (LLM is calling for help!) with a key-combo or click on can switch to the next highest-priority tab. Except that feature is still a bit buggy. What works well thouse is the Markdown rendering. With English being the hottest new coding language and AI-assisted coders mostly editing markdown files this is a nice feature to have. Check out below screenshot based on command "vi README.md": it shows the screen of the anient `vi` editor - it does not know that the terminal program detects markdown, rescales fonts and detects are formatting do-dads. Having surplus compute a 'raising bubble' effect has been added via a click and the hidden 'matrix rain' animation to complete the orchestration - all geared to keep you in the "flow" so you can keep vibe-coding!
+A terminal emulator for the vibe coding era. Actually it is built for a renaissance of "multi-tasking" brought to us in form of vibe coding. The category of the terminal app is one of the first that ever existed and yet has never been really re-thought from the ground up. Here is a stab at it: If you are in a terminal session, but another session (tab) needs your attention (LLM is calling for help!) with a key-combo or click on can switch to the next highest-priority session. Except that feature is still a bit buggy. What works well though is the Markdown rendering. With English being the hottest new coding language and AI-assisted coders mostly editing markdown files this is a nice feature to have. Check out below screenshot based on command "vi README.md": it shows the screen of the anient `vi` editor - it does not know that the terminal program detects markdown, rescales fonts and detects other formatting do-dads. Having surplus compute a 'raising bubble' effect has been added via a click and the hidden 'matrix rain' animation to complete the orchestration - all geared to keep you in the "flow" so you can keep vibe-coding!
 
 ![TermLife Screenshot](assets/termlife-markdown.png)
+
+**Please note that this is a hobby project in an early stage. One cannot with confidence say this terminal app is ready for sensitive projects because it has not been thoroughly tested and contains AI-generated code!** 
+
+That said: it would be all the more helpful if you try it out and leave some feedback or maybe even contribute!
 
 ## Features
 
